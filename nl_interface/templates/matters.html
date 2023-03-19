@@ -1,0 +1,8 @@
+<h1>Matters</h1>
+  <ul>
+    {% for matter in matters %}
+      <li>{{ matter.title }} - {{ matter.description }}</li>
+    {% empty %}
+      <li>No matters found.</li>
+    {% endfor %}
+  </ul>

@@ -1,0 +1,9 @@
+<h1>Matter Detail</h1>
+  <h2>{{ matter.title }}</h2>
+  <p>Created: {{ matter.created_at }}</p>
+
+  <form method="POST">
+    {% csrf_token %}
+    <input type="text" name="command" placeholder="Enter command...">
+    <button type="submit">Submit</button>
+  </form>
